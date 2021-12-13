@@ -1,0 +1,19 @@
+01. 화면은 어떻게 그리는가
+- 기본적으로 XML(DSL, Domain Specific Language로 어떤 범주에 특화된 언어) 사용. 안드로이드 화면을 그리기 위해 특화되었다.
+- Story Board방식으로, 드래그 앤 드롭 방식으로 화면을 그릴 수 있다. (잘 쓰이지 않는편)
+
+dpi 종류(dot per inch로, 1인치 당 픽셀 수)
+- ldpi : 120dpi
+- mdpi : 160dpi
+- hdpi : 240dpi
+- xhdpi : 320dpi
+- xxhdpi : 480dpi
+- xxxhdpi : 640dpi
+
+dp(Density Independent pixel, 픽셀에 독립적인 단위)의 개념
+- 안드로이드에서 dp 단위를 사용하면 단말기 해상도에 따라 픽셀 값이 자동으로 계산을 해주어 화면에 그려지게 된다.
+- 30dp라고 치자면, 단말기의 해상도에 따라 자동으로 픽셀이 계산되어 그려지게 된다.
+- px = dp * (단말 DPI / 기본 160)
+- dp = px * (기본 160 / 단말 DPI)
+- xhdpi(320dpi)단말기에서, 100픽셀로 선을 그었을시 dp는 100 * (160 / 320) = 50dp
+- xxhdpi(480dpi)단말기에서, 100픽셀로 선을 그었을시 dp는 100 * (160 / 480) = 100/3 dp

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+orientation
+- horizontal : 수평 방향 배치
+- vertical : 수직 방향 배치
+
+자식 뷰 컴포넌트들을 일관 정렬하는 속성
+gravity :
+layout_gravity : 자식 요소 입장에서 부모 기준으로 정렬하는 속성
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textStyle="italic"
+        android:text="텍스트1"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <TextView
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="텍스트2"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+</LinearLayout>
