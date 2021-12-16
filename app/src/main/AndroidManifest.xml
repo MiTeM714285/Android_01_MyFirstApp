@@ -9,13 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApp_01">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity2"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>
+
+    <!--
+        android:allowBackup - 자동 백업으로 사용자 데이터 백
+        android:icon - 앱 아이콘
+        android:roundIcon - 둥근 앱 아이콘(비교적 최근의 단말기에 채용)
+        android:label - 앱 아이콘 밑에 표시되는 제목
+        android:supportsRtl - true일때 언어권에 따라 글의 시작위치 설정
+        android:theme - 적용될 테마
+    -->

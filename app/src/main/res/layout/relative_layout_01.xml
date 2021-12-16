@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+RelativeLayout
+- 상대 레이아웃으로, 부모가 기준이 되는 화면
+- 특정한 뷰를 지정해서 사용
+
+부모 뷰 기준으로 처리하기
+- Parent가 들어가는 속성
+- Center가 들어가는 속성
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"/>
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_dark"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+</RelativeLayout>

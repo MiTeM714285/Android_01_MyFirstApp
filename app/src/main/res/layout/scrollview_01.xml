@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    잘못된 작성법 : 스크롤 뷰는 오직 하나의 자식 뷰만 소유가능.
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/teal_200"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/teal_200"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/teal_200"/>
+
+    </ScrollView>
+    -->
+
+    <!--
+        scrollbars : 스크롤바 보임의 유무
+        fillViewport : 반드시 있어야 할 속성
+    -->
+    <ScrollView
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@color/teal_200"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_700"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/holo_green_light"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@color/teal_200" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

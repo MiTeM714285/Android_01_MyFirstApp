@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        scaleType
+        - center : 가운데 정렬 및 비율 유지, 전체 그림 표시 및 여백O
+        - centerCrop : 가운데 정렬 및 비율 무시, 전체 그림 표시 및 여백X
+
+    -->
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:background="@color/teal_200"
+        android:src="@drawable/image1"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+    <!-- build.gradle의 implementation 'de.hdodenhof:circleimageview:3.1.0' -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/image2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#ff00ff"/>
+
+
+</LinearLayout>
